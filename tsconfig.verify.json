@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": false,
+    "outDir": ".verify-dist",
+    "jsx": "react-jsx",
+    "target": "es2020",
+    "skipLibCheck": true,
+    "esModuleInterop": true
+  },
+  "include": ["scripts", "src"]
+}
