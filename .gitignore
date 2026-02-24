@@ -6,3 +6,23 @@ node_modules/
 *~
 .vscode/
 .idea/
+
+# Security
+.env
+.env.*
+*.env
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build
+dist/
+build/
+coverage/
+
+# OS
+Thumbs.db
