@@ -1,0 +1,4 @@
+## 2025-02-28 - Missing Environment Variable Protection in Gitignore
+**Vulnerability:** The project repository is initialized with a very basic `.gitignore` file that omits critical security patterns like `.env` files, `.env.local`, debug logs, build outputs, and cryptographic keys (`*.pem`, `*.key`).
+**Learning:** Incomplete gitignores are a very common source of accidental secrets disclosure. By omitting these baseline patterns, developers risk committing local configuration secrets (like API keys, database credentials) to remote repositories. The `.gitignore` included some basic application outputs (`node_modules/`, `AppData/`) but lacked security-specific file exclusions.
+**Prevention:** Apply a robust set of security baseline exclusions in `.gitignore` on every project initialization, explicitly targeting environment files, debug logs, local configurations, and sensitive secrets before any actual code is written.
