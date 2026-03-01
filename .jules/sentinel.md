@@ -1,0 +1,4 @@
+## 2026-03-01 - [Hardened .gitignore]
+**Vulnerability:** The project lacked explicit exclusion patterns for `.env` files, debug logs, and build artifacts. This creates a high risk of accidentally exposing secrets and credentials to version control.
+**Learning:** Foundational repositories that begin almost empty (e.g. only containing `.gitignore`) need defense-in-depth protections applied proactively, even before code is written, to prevent future accidental secret leakage.
+**Prevention:** Include standard strict ignore patterns for `.env.*`, keys (`*.pem`, `*.key`), debug logs (`*.log`), and temporary artifacts. Ensure that only explicit environment examples (like `!.env.example`) are permitted.
