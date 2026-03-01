@@ -6,3 +6,21 @@ node_modules/
 *~
 .vscode/
 .idea/
+
+# Security
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm
+*.log
+
+# Build
+dist/
+build/
+.verify-dist/
+preview/
+.preview-dist/
