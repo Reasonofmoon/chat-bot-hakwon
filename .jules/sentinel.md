@@ -1,0 +1,4 @@
+## 2025-03-02 - Missing Secure Defaults in .gitignore
+**Vulnerability:** The repository lacked basic, foundational security ignore patterns in its `.gitignore` file. Common sensitive files such as `.env` variables, diagnostic logs (`*.log`), and temporary build artifacts (`.verify-dist/`, `preview.html`) were not explicitly ignored.
+**Learning:** Even in newly initialized or seemingly empty frontend projects, failing to seed `.gitignore` with strict exclusion rules creates an immediate, passive risk of accidentally committing sensitive credentials, system paths, or debug output to version control during early development.
+**Prevention:** Always initialize new repositories with a comprehensive, "secure-by-default" `.gitignore` that anticipates the toolchain (e.g., node, pnpm) and explicitly blocks environment files, logs, and compiled assets before active development begins.

@@ -6,3 +6,21 @@ node_modules/
 *~
 .vscode/
 .idea/
+
+# Security: Prevent committing environment variables
+.env
+.env.*
+!.env.example
+
+# Security: Prevent committing debug logs that may contain sensitive data
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Security: Prevent committing build artifacts and temporary testing directories
+dist/
+build/
+.verify-dist/
+preview.html
