@@ -6,3 +6,40 @@ node_modules/
 *~
 .vscode/
 .idea/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Secrets and keys
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+
+# Build/Coverage (may contain secrets/sensitive info)
+dist/
+build/
+coverage/
+.next/
+out/
+.nuxt/
+.output/
+.vercel/
+.cache/
+
+# macOS
+.DS_Store
